@@ -17,3 +17,5 @@ class FormPage(BasePage):
         self.btn_close_modal = WebElement(driver, locator= '#closeLargeModal')
         self.hobbies = WebElement(driver, '#hobbiesWrapper > div.col-md-9.col-sm-12 > div:nth-child(3) > label')
         self.current_address = WebElement(driver, '#currentAddress')
+        self.btn_state = WebElement(driver, '#state > div > div.css-1hwfws3')
+

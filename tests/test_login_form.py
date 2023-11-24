@@ -1,4 +1,5 @@
 import time
+from selenium.webdriver.common.keys import Keys
 
 from pages.form_page import FormPage
 from components.components import WebElement
@@ -23,7 +24,6 @@ def test_login_form(browser):
 
     assert form_log.modal_dialog.exist()
     form_log.btn_close_modal.click_force()
-
 
 
 
