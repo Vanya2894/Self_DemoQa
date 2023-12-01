@@ -8,6 +8,8 @@ class DemoQa(BasePage):
         self.icon = WebElement(driver, locator='#app > header > a')
         self.btn_elements = WebElement(driver, locator='div.home-body > div > div:nth-child(1)')
 
+        self.h5 = WebElement(driver, 'div h5')
+
 
     # def exist_icon(self):
     #     try:

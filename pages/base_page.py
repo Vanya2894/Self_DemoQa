@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import WebDriverException
 from components.components import WebElement
 import logging
+import requests
 class BasePage():
     def __init__(self, driver, base_url):
         self.driver = driver
@@ -39,6 +40,10 @@ class BasePage():
         except Exception as ex:
             logging.log(1, ex)
             return False
+
+    def code_status(self):
+        resp = requests.get(self.base_url)
+        return resp.status_code == 200
 
 
 

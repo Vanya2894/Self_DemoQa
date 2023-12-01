@@ -7,5 +7,5 @@ class Droppable(BasePage):
         self.base_url = 'https://demoqa.com/droppable'
         super().__init__(driver, self.base_url)
 
-        self.drag = WebElement(driver, '#draggable')
-        self.drop = WebElement(driver, '#droppable')
+        self.drag = WebElement(driver, locator='#draggable')
+        self.drop = WebElement(driver, locator='#simpleDropContainer #droppable')
